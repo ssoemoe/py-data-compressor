@@ -1,0 +1,29 @@
+This is to be compressed with base 64 encoding.
+This is a small text file.
+----------------------------------
+RLE
+Run-length encoding (RLE) is a very simple form of lossless data compression
+in which runs of data (that is, sequences in which the same data value occurs in many consecutive data elements)
+are stored as a single data value and count, rather than as the original run.
+This is most useful on data that contains many such runs. Consider,
+for example, simple graphic images such as icons, line drawings, Conway’s Game of Life, and animations.
+It is not useful with files that don't have many runs as it could greatly increase the file size.
+RLE may also be used to refer to an early graphics file format supported by CompuServe for compressing black and
+white images, but was widely supplanted by their later Graphics Interchange Format.
+RLE also refers to a little-used image format in Windows 3.x,
+with the extension rle, which is a Run Length Encoded Bitmap, used to compress the Windows 3.x startup screen.
+
+LZ77 and LZ78
+LZ77 and LZ78 are the two lossless data compression algorithms
+published in papers by Abraham Lempel and Jacob Ziv in 1977[1] and 1978.[2]
+They are also known as LZ1 and LZ2 respectively.[3]
+These two algorithms form the basis for many variations including LZW, LZSS, LZMA and others.
+Besides their academic influence, these algorithms formed the basis of several ubiquitous compression schemes,
+including GIF and the DEFLATE algorithm used in PNG and ZIP.
+
+Huffman encoding
+In computer science and information theory,
+a Huffman code is a particular type of optimal prefix code that is commonly used for lossless data compression.
+The process of finding and/or using such a code proceeds by means of Huffman coding,
+an algorithm developed by David A. Huffman while he was a Sc.D. student at MIT, and
+published in the 1952 paper "A Method for the Construction of Minimum-Redundancy Codes".
