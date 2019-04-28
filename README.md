@@ -1,5 +1,5 @@
 # Data Compression Algorithms
-##### Purpose: To practice lossless data compression algorithms (encodings) 
+##### Purpose: To practice lossless data compression algorithms (encodings) and to be more familiar with Python
 
 --- 
 ## Lossless Data Compression Algorithms
