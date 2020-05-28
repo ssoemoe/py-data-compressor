@@ -1,3 +1,4 @@
+(WORK IN PROGRESS: NEEDS TO CLEAR IDE FILES AND STUFF)
 # Data Compression Algorithms
 ##### Purpose: To practice lossless data compression algorithms (encodings) and to be more familiar with Python
 
