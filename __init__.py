@@ -2,7 +2,7 @@
 import zlib, sys, base64
 
 def base64_compression():
-    text = open('small_file.txt', 'r').read()
+    text = open('files/small_file.txt', 'r').read()
     print("Raw size: ", sys.getsizeof(text))
 
     # text.encode() [bytes] is usually good enough, but just wanna do base64 [bytes]
@@ -11,18 +11,18 @@ def base64_compression():
     compressed = zlib.compress(bytes, 9)
     print("Compressed Size with max (9): ", sys.getsizeof(compressed))
 
-    output = open('compressed_data.bin', 'wb')
+    output = open('files/compressed_data.bin', 'wb')
     output.write(compressed)
     output.close()
 
     decompressed_text = ''
-    bytes = open('compressed_data.bin', 'rb').read()
+    bytes = open('files/compressed_data.bin', 'rb').read()
     decompressed = zlib.decompress(bytes)
-    output = open('to_compare.txt', 'w')
+    output = open('files/to_compare.txt', 'w')
     output.write( (base64.b64decode(decompressed)).decode() )
     output.close()
     # compare the file
-    to_compare = open('to_compare.txt', 'r').read()
+    to_compare = open('files/to_compare.txt', 'r').read()
     print("Do we get every data back? " , to_compare == text)
 
 if __name__ == '__main__':
